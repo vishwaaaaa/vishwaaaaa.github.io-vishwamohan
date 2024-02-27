@@ -1,0 +1,339 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vishwa Mohan Tiwari</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>I am <br />
+						Vishwa Mohan Tiwari</h1>
+						<p>A researcher, passionate about computational science and simulations using numerical methods. Please connect with me on linkedin <a href="https://www.linkedin.com/in/vishwamohan-nitk/">@vishwamohan-nitk</a> if you like my work and share similar interests. <br />
+						</p>
+						<a href="#" class="image fit"><img src="images/MDOlab.jpeg" alt="" /></a>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<!-- <header id="header">
+						<a href="index.html" class="logo">Massively</a>
+					</header> -->
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Featured Projects</a></li>
+							<li><a href="generic.html">Talks and Publications</a></li>
+							<li><a href="elements.html">Hobbies and Activities</a></li>
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/vishwamohan-nitk/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/vishwaaaaa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<span class="date">December 15, 2023 University of Michigan</span>
+									<h2>High-fidelity RANS CFD based Aerodynamic shape optimization <br />
+									</h2>
+									<p>Fluid flow can be tricky to simulate either in terms of the accuracy of the simulations or the time taken to obtain the results.
+										Performing an aircraft optimization considering the flow considering all the flow characteristics becomes a tough problem to formulate and setup.
+										The choice of wrong CFD solver and turbulence model might lead to the unconverged solution, especially when dealing with operating points of Mach = 0.8 (cruise condition for commerical aircrafts).
+										
+										I perfomed a the shape optimization of a Boeing A727 200 Adv wing with the objective of minimizing fuel burnt with the constraint of range greater than that achieved by the actual aircraft.
+										To capture the correct flow features (shocks, separation, etc..), <a href="https://github.com/mdolab/adflow"> ADflow</a> CFD solver was used in this project. It's a structured multiblock solver with overset meshes. 
+										with discrete adjoints(for gradients) and MPI (for parallelization).
+										The initial geometry is design in OpenVSP using the available pictures and literature on A727 200 Adv. The surface meshing is done in Pointewise. The volume mesh was generated using <a href="https://github.com/mdolab/pyhyp">pyHyp</a>.
+										This is fed to the IPOPT optimization to obtain the final optimized geometry
+
+									</p>
+								</header>
+								<a href="#" class="image main">
+									<img src="images/final_mdo_gif.gif" alt="" />
+								</a>
+								<!-- <a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a> -->
+								<ul class="actions special">
+									<li><a href="https://drive.google.com/file/d/1i8dPm85DHE2oFlqdEODSk3G71iBaJUoJ/view?usp=sharing" class="button large">Full Report</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">November 15, 2023 University of Michigan</span>
+										<h2>Finite Element Analysis of thin Polygonal shells</h2>
+									</header>
+									<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+									<a href="#" class="image fit">
+										<img src="images/poly_gif_again.gif" alt="" />
+									</a>
+									<p>Thin walled shells are notorious for having unpredictable collapse load. Further they show a great imperfection sensitivity, which means in the presence of imperfection they collapse drastically.
+										In this research work, we try to design shells so that they can make use of the post-buckling capacity of plates. We are able to achieve a higher load carrying capacity and shells that are insensitive to imperfections.
+
+									</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1uv8zOl0W0lsL40b8y_VS7meJbv1WpSty/view?usp=sharing" class="button">Full Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">August 22, 2023 University of Michigan</span>
+										<h2>eVTOL trajectory optimization with Vortex Lattice Method for aerodynamics<br />
+										</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/evtol_CAD.png" alt="" /></a>
+									<p>Urban air mobility has seen a boom in recent times. We want to find a trajectory that minimizes the total energy consumed by the Vehicle. I incorporated a Vortex Lattice Method code to the trajectory optimization loop for the evaluating the aerodynamics.
+										Further, to enable a speed up in computation we proposed the idea of tandem phases for the cruise segment of the trajectory. 
+									</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1Uxi5GgH-8gbh4pYbAwG8qcW-iEW7TSKA/view?usp=sharing" class="button">Full Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Nov 20, 2022 University of Edinburgh</span>
+										<h2>Machine Learning for eddy viscosity prediction</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/eddyviscosity.png" alt="" /></a>
+									<p>Turbulence modelling is by far the most challenging problems in computation. The type of model such as Spallart Allmaras or K-epsilon depends on the physics we are interested.
+										An interesting application of machine learning was used here to predict the eddy viscosity of the RANS model for backward facing step. The results from these simulations matched with DNS data.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://docs.google.com/document/d/1dqeKEatwFcHaRGVTc_8jYucVY7iHEELG/edit?usp=sharing&ouid=106696029101823632867&rtpof=true&sd=true" class="button">Full Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">Auguest 5, 2023 IIT Madras, India</span>
+										<h2>Mutli-phase droplet modelling using Lattice Boltzmann Method and phase field method<br />
+										</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/IITM.PNG" alt="" /></a>
+									<p>Multiphase flow modeling has many methods such shape interface method like Volume of fluid method and diffused interface method such as Phase field method. We looked Shan-chan Lattice Boltzmann method for modeling the droplet and verify the results using laplace test.</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1zAXP6xWTLh3_JLuEpKLcG6M1pgyc8tsJ/view?usp=sharing" class="button">Full Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 23, 2023 University of Michigan</span>
+										<h2>Eular Equation CFD solver for transonic flows</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/p4combined.png" alt="" /></a>
+									<p>The present project is an extension of the
+										finite-volume method (FVM) solver of the
+										incompressible Euler equations, to implement an implicit time
+										marching scheme to reduce the run time of
+										the solver. An implicit backward Euler time
+										integration with a Newton solver is imple
+										mented in the first and second-order FVM
+										solvers. The solutions from the first-order
+										FVM solver with the implicit scheme opti
+										mized for CFL number are compared with
+										those obtained from the solver with the ex
+										plicit scheme. For the second-order FVM
+										solver, an implicit scheme with the approx
+										imate Jacobian developed for the first-order
+										FVM as well as an implicit scheme with
+										frozen limiter Jacobian are implemented.
+										The solutions obtained from them are com
+										pared with those obtained from the solver
+										with the explicit scheme. A significant re
+										duction in wall clock time is achieved for
+										implicit time-marching schemes with opti
+										mized CFL numbers compared to explicit
+										schemes for both orders of FVM solver
+										while giving approximately the same re
+										sults</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/13pXNm83HDDpzEM5kcIOaZ19meD2feAT6/view?usp=sharing" class="button">Full Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">10 Dec, 2021 IIT Bombay, India</span>
+										<h2>Study of Plume driven by temperature gradients</h2>
+									</header>
+									<!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
+									<video controls class="fit"  width="100%" height="auto">
+										<source src="images/buoyantlong top.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+									<p>The temperature gradient-driven flow, also known as thermogravitational convection or thermally induced buoyancy-driven flow, is a phenomenon where fluid motion is generated in response to temperature differences within a fluid. When a fluid experiences non-uniform heating or cooling, it leads to variations in temperature across different regions. As a result, the fluid density also varies due to thermal expansion or contraction. This density difference causes buoyancy forces, leading to fluid motion. In the context of natural convection, warmer fluid near a heat source tends to rise, while cooler fluid descends, creating a circulation pattern
+										This study was done with the intension of developing a concentration driven flow and crystalization.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1VE24GYvczwdgRXSjIfl6fTzIvWwCmr6h/view?usp=sharing" class="button">Full Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">January 11, 2021 IIT Bombay, India</span>
+										<h2>Magnetohydrodynamic 3D channel flows using OpenFOAM</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/MHD_final.png" alt="" /></a>
+									<p>This project is aimed to study numerically the phenomena of
+										Magneto-hydrodynamics (MHD). The focus of the paper is
+										narrowed down to understanding a particular case in the
+										field of MHD, i.e, low magnetic Reynolds number Rm. Here
+										one the most popular open source CFD software OpenFOAM
+										
+										is employed to set up the problem. The two major for-
+										mulation of MHD equations are discussed in the form of
+										
+										mhdFoam and epotFoam, and further the most appropri-
+										ate method is used to simulate the square duct flow for low
+										
+										Rm number. Based on the boundary conditions the two most
+										
+										popular MHD flows namely hunt and shercliff cases are stud-
+										ied.</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1W4-Ye8cRifAGOtjiXSdKlkij5mThLBdW/view?usp=sharing" class="button">Full Report</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 22, 2022 NITK</span>
+										<h2>Fluid Structure Interaction Study in Carotid Artery
+											and Qualitative Analysis of Diseased Artery</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/Btech_final.PNG" alt="" /></a>
+									<p>The carotid arteries are a pair of blood vessels located on both sides of the human
+										neck that deliver blood to the brain and head. Carotid artery disease occurs when
+										fatty deposits ( plague ) clog the blood vessels. As a consequence of this deposition,
+										the severe narrowing of arteries occurs. This narrowing could block the blood flow,
+										causing a stroke. In the present work, we analyze the blood through the bifurcation of
+										the Carotid Artery. The analysis is done by adopting the Fluid-Structure Interaction
+										(FSI ) modeling method. FSI is a Multi-physics coupling between the laws that
+										describe fluid dynamics and structural mechanics.</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/126zcM7loOs0XJZ1efVyQINj0UP6LFhbB/view?usp=sharing" class="button">Full Report</a></li>
+									</ul>
+								</article>
+							</section>
+							<section>
+								<article>
+									<header>
+										<span class="date">June 1 2023, ANSYS </span>
+										<h2>R & D Intern at ANSYS Inc.</h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/Ansys.PNG" alt="" /></a>
+									<p>From the period of 8 months, I was involved working for ANSYS as an R & D Verfication and Validation Intern.
+										My work revolved around creating test cases and write python scripts to automate testing. Further worked with customer models for CPU and GPU based solvers.
+										Using literature, I validated the turbulence models in Discovery Release Candidate for 2024 R1.
+									</p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1bgGZ3t1dzzwbCIkqlkIgiIhDhufcQunI/view?usp=sharing" class="button">Certificate</a></li>
+									</ul>
+								</article>
+
+							</section>
+
+						<!-- Footer -->
+							<footer>
+								<div class="pagination">
+									<!--<a href="#" class="previous">Prev</a>-->
+									<!-- <a href="#" class="page active">1</a>
+									<a href="#" class="page">2</a>
+									<a href="#" class="page">3</a>
+									<span class="extra">&hellip;</span>
+									<a href="#" class="page">8</a>
+									<a href="#" class="page">9</a>
+									<a href="#" class="page">10</a>
+									<a href="#" class="next">Next</a> -->
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section> -->
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1923 Pointe Lane, #103<br />
+								Ann Arbor, MI 48105-2165</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(734) 596-8361</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">vishwaa@umich.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+									<li><a href="https://www.linkedin.com/in/vishwamohan-nitk/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/vishwaaaaa" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
